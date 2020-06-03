@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Form</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Contact Form</h1>
+        <p>Notice an issue with one of my projects? Use the contact form below.</p>
+        <form method="get" action="mailto:nicohumor@outlook.com">
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br><br>
+            <label for="body">Body:</label><br>
+            <textarea rows="16" cols="50" id="body" name="body" required minlength="20"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
