@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167358769-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167358769-2');
+</script>
+
+    <meta charset="utf-8">
+    <title>Detect Adblock Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <iframe src="navbar.html" height="36" style="border: none; width: 100%;"></iframe>
+    <h1>Detect Adblock Test</h1>
+    <script>
+      var e=document.createElement('div');
+      e.id='sKyOcgTDiNCR';
+      e.style.display='none';
+      document.body.appendChild(e);
+    </script>
+    <script src="/ads.js"></script>
+    <script>
+      if(document.getElementById('sKyOcgTDiNCR')){
+        alert('Blocking Ads: No');
+      } else {
+        alert('Blocking Ads: Yes');
+      }
+    </script>
+  </body>
+</html>
