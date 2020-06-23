@@ -16,9 +16,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <style>
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-            }
             .ui-autocomplete {
                 max-height: 200px;
                 overflow-y: auto;
@@ -34,8 +31,10 @@
                     <h1>HTML Tag Search</h1>
                     <p>The text box below has autocomplete, and you can type in any phrase and see HTML tags as the result. Clicking search will perform a search on <a href="https://developer.mozilla.org/en-US/">MDN Web Docs.</a></p>
                     <form action="https://developer.mozilla.org/en-US/search">
-                        <label for="q">Search for HTML tags:</label><br>
-                        <input id="q" name="q" autofocus><br><br>
+                        <div class="form-group">
+                            <label for="q">Search for HTML tags:</label><br>
+                            <input id="q" name="q" autofocus><br><br>
+                        </div>
                         <input type="submit" class="btn btn-primary" value="Search">
                     </form>
                 </div>
