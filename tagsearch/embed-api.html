@@ -21,49 +21,75 @@
       <h1>HTML Tag and CSS Property Search Embed API</h1>
       <p>You can use the Embed API to embed an HTML tag search or CSS property search into your pages.</p>
       <h2>Installation</h2>
+      <h3>CSS</h3>
       <p>Include the following stylesheet in your head.</p>
       <textarea class="form-control" rows="2" readonly>
         &lt;link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
       </textarea>
+    <div class="col-sm">
+      <h3>JavaScript</h3>
       <p>Include jQuery, jQuery UI, and the Embed API in your document. It doesn't matter where they go, but jQuery must come first, then jQuery UI, then the Embed API.</p>
       <textarea class="form-control" rows="6" readonly>
         &lt;script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">&lt;/script>
         &lt;script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous">&lt;/script>
         &lt;script src="https://techboyg5.github.io/tagsearch/tagsearch.js">&lt;/script>
       </textarea>
-      <h2>Usage</h2>
-      <h3>HTML Tag Search</h3>
-      <p>Give a form input an id of <code>tags</code> for an HTML tag search.</p>
-      <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="techboyg5" data-slug-hash="BajRPoq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="HTML Tag Search Embed API Demo">
-        <span>See the Pen <a href="https://codepen.io/techboyg5/pen/BajRPoq">
-        HTML Tag Search Embed API Demo</a> by techboyg5 (<a href="https://codepen.io/techboyg5">@techboyg5</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-      <h3>CSS Property Search</h3>
-      <p>Or, give a form input an id of <code>props</code> for a CSS property search.</p>
-      <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="techboyg5" data-slug-hash="WNrjKxW" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="WNrjKxW">
-        <span>See the Pen <a href="https://codepen.io/techboyg5/pen/WNrjKxW">
-        WNrjKxW</a> by techboyg5 (<a href="https://codepen.io/techboyg5">@techboyg5</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-      <h2>Scrollable List</h2>
-      <p>You can prevent the list from overflowing by giving it a maximum height and making it scrollable. Just copy the CSS below and change the height if necessary.</p>
-      <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="techboyg5" data-slug-hash="gOPWjZE" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="HTML Tag Search Embed API Scrollable List">
-        <span>See the Pen <a href="https://codepen.io/techboyg5/pen/gOPWjZE">
-        HTML Tag Search Embed API Scrollable List</a> by techboyg5 (<a href="https://codepen.io/techboyg5">@techboyg5</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-      <h2>Example</h2>
-      <p>This example uses a Bootstrap navbar, a scrollbale list, and the HTML Tag Search Embed API.</p>
-      <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="techboyg5" data-slug-hash="xxZdJrd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="HTML Tag Search Embed API Example">
-        <span>See the Pen <a href="https://codepen.io/techboyg5/pen/xxZdJrd">
-        HTML Tag Search Embed API Example</a> by techboyg5 (<a href="https://codepen.io/techboyg5">@techboyg5</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      <div class="row">
+        <div class="col-sm">
+          <h2>HTML Tag Search</h2>
+          <p>Give a form input an id of <code>tags</code> for an HTML tag search.</p>
+        </div>
+        <div class="col-sm">
+          <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="techboyg5" data-slug-hash="BajRPoq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="HTML Tag Search Embed API Demo">
+            <span>See the Pen <a href="https://codepen.io/techboyg5/pen/BajRPoq">
+            HTML Tag Search Embed API Demo</a> by techboyg5 (<a href="https://codepen.io/techboyg5">@techboyg5</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <h2>CSS Property Search</h2>
+          <p>Or, give a form input an id of <code>props</code> for a CSS property search.</p>
+        </div>
+        <div class="col-sm">
+          <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="techboyg5" data-slug-hash="WNrjKxW" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="WNrjKxW">
+            <span>See the Pen <a href="https://codepen.io/techboyg5/pen/WNrjKxW">
+            WNrjKxW</a> by techboyg5 (<a href="https://codepen.io/techboyg5">@techboyg5</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <h2>Scrollable List</h2>
+          <p>You can prevent the list from overflowing by giving it a maximum height and making it scrollable. Just copy the CSS and change the height if necessary.</p>
+        </div>
+        <div class="col-sm">
+          <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="techboyg5" data-slug-hash="gOPWjZE" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="HTML Tag Search Embed API Scrollable List">
+            <span>See the Pen <a href="https://codepen.io/techboyg5/pen/gOPWjZE">
+            HTML Tag Search Embed API Scrollable List</a> by techboyg5 (<a href="https://codepen.io/techboyg5">@techboyg5</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <h2>Example</h2>
+          <p>This example uses a Bootstrap navbar, a scrollbale list, and the HTML Tag Search Embed API.</p>
+        </div>
+        <div class="col-sm">
+          <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="html,result" data-user="techboyg5" data-slug-hash="xxZdJrd" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="HTML Tag Search Embed API Example">
+            <span>See the Pen <a href="https://codepen.io/techboyg5/pen/xxZdJrd">
+            HTML Tag Search Embed API Example</a> by techboyg5 (<a href="https://codepen.io/techboyg5">@techboyg5</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
