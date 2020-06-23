@@ -18,14 +18,19 @@
             body {
                 font-family: Arial, Helvetica, sans-serif;
             }
+            .ui-autocomplete {
+                max-height: 200px;
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
         </style>
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     </head>
     <body>
         <h1>HTML Tag Search</h1>
-        <p>The text box below has autocomplete, and you can type in any phrase and see HTML tags as the result. Clicking search will search on <a href="https://developer.mozilla.org/en-US/">MDN Web Docs.</a></p>
+        <p>The text box below has autocomplete, and you can type in any phrase and see HTML tags as the result. Clicking search will perform a search on <a href="https://developer.mozilla.org/en-US/">MDN Web Docs.</a></p>
         <form action="https://developer.mozilla.org/en-US/search">
-            <label for="q">Tags:</label><br>
+            <label for="q">Search for HTML tags:</label><br>
             <input id="q" name="q"><br><br>
             <input type="submit" value="Search" class="ui-button ui-widget ui-corner-all">
         </form>
