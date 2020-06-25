@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>New Tab</title>
+        <link rel="icon" href="about:logo">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                background-image: url("https://source.unsplash.com/random/1024x768");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            input {
+                padding: 10px;
+                background-color: white;
+                color: black;
+                border: none;
+                transition: all 0.25s;
+                border-radius: 5px;
+                border: 1px solid black;
+            }
+            input:hover, input:focus {
+                background-color: black;
+                color: white;
+            }
+            input[type="submit"] {
+                cursor: pointer;
+            }
+            table {
+                width: 100%;
+            }
+            td {
+                padding: 10px;
+            }
+            td a {
+                text-decoration: none;
+                color: blue;
+            }
+            .blur {
+                background-color: rgba(255, 255, 255, 0.75);
+                backdrop-filter: blur(10px);
+                padding: 10px;
+                border-radius: 10px;
+                border: 1px solid black;
+            }
+            .blurpromo {
+                text-align: center;
+            }
+            .blurpromo summary {
+                cursor: pointer;
+            }
+            @supports (backdrop-filter: blur(10px)) {
+                .blurpromo {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="blur">
+            <form method="get" action="https://duckduckgo.com/" role="search">
+                <input type="text" name="q" placeholder="Search DuckDuckGo">
+                <input type="submit" value="Search">
+            </form>
+            <br>
+            <table>
+                <tr>
+                    <td><a href="https://www.google.com/">Google</a></td>
+                    <td><a href="https://www.youtube.com/">YouTube</a></td>
+                    <td><a href="https://www.facebook.com/">Facebook</a></td>
+                    <td><a href="https://www.amazon.com/">Amazon</a></td>
+                    <td><a href="https://www.yahoo.com/">Yahoo</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://twitter.com">Twitter</a></td>
+                    <td><a href="https://www.instagram.com/">Instagram</a></td>
+                    <td><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></td>
+                    <td><a href="https://www.ebay.com/">eBay</a></td>
+                    <td><a href="https://www.reddit.com/">Reddit</a></td>
+                </tr>
+            </table>
+            <details class="blurpromo">
+                <summary>Enable background blur for the best CleanStart experience.</summary>
+                <p>CleanStart just got a complete redesign, which includes background blur. Firefox disables background blur by default, so here's how to enable it:</p>
+                <ol>
+                    <li>Go to the page <strong>about:config</strong>.</li>
+                    <li>If a <em>Proceed with Caution</em> page appears, click the button <strong>Accept the Risk and Continue</strong>.</li>
+                    <li>Type <strong>layout.css.backdrop-filter.enabled</strong> into the search box.</li>
+                    <li>Double-click the preference to set it to <strong>true</strong>.</li>
+                </ol>
+            </details>
+        </div>
+    </body>
+</html>
