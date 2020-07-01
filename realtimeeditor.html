@@ -44,8 +44,7 @@
             function goHtml() {
                 var codeInput = document.getElementById("codeInput");
                 var codeResult = document.getElementById("codeResult");
-                var htmlCode = codeInput.value;
-                codeResult.src = 'data:text/html;base64,' + btoa(htmlCode);
+                codeResult.src = 'data:text/html;base64,' + btoa(codeInput.value);
             }
         </script>
     </body>
