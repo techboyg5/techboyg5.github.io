@@ -1,2 +1,2 @@
 # techboyg5.github.io
-This is my home page!
+My home page and some single files.
