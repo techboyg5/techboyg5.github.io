@@ -35,11 +35,19 @@
                     </div>
                 </div>
             </div>
-            <div id="comments">
+            <div id="comments" class="my-3">
                 <h2>Comments</h2>
-                <div class="alert alert-primary" role="alert">
+                <div class="alert alert-primary alert-dismissible fade show" role="alert">
                     <strong>Comment Policy:</strong> Be nice. Off-topic comments will be removed.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <noscript>
+                    <div class="alert alert-danger" role="alert">
+                        <strong>Error loading comments:</strong> Please enable JavaScript in your browser to view and post comments.
+                    </div>
+                </noscript>
                 <script src="https://utteranc.es/client.js"
                     repo="techboyg5/comment-database"
                     issue-term="pathname"
