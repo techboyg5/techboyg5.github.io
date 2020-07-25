@@ -15,8 +15,10 @@
       <title>Redirecting...</title>
     </head>
     <body>
-      const parameters = new URLSearchParams(window.location.search);
-      const location = parameters.get('location');
-      window.location.replace(location);
+        <script>
+            const parameters = new URLSearchParams(window.location.search);
+            const location = parameters.get('url');
+            window.location.replace(location);
+        </script>
     </body>
 </html>
