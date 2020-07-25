@@ -17,8 +17,8 @@
     <body>
         <script>
             const parameters = new URLSearchParams(window.location.search);
-            const location = parameters.get('url');
-            window.location.replace(location);
+            const urlParam = parameters.get('url');
+            window.location.replace(urlParam);
         </script>
     </body>
 </html>
