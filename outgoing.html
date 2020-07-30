@@ -15,10 +15,11 @@
       <title>Redirecting...</title>
     </head>
     <body>
+        <h1>Taking you to the right place...</h1>
         <script>
             const urlParams = new URLSearchParams(window.location.search);
             const locationParam = urlParams.get('url');
-            window.location.replace(locationParam);
+            setTimeout(function(){window.location.replace(locationParam);}, 1000);
         </script>
     </body>
 </html>
