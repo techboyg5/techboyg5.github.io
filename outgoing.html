@@ -14,11 +14,13 @@
         <meta charset="utf-8">
         <title>Redirecting...</title>
     </head>
-    <body>
+    <body onload="redirect">
         <script>
             const urlParams = new URLSearchParams(window.location.search);
             const locationParam = atob(urlParams.get('url'));
-            setTimeout(function(){window.location.replace(locationParam);}, 500);
+            function redirect() {
+                window.location.replace(locationParam);
+            }
         </script>
     </body>
 </html>
