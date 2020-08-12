@@ -14,7 +14,7 @@
         <meta charset="utf-8">
         <title>Redirecting...</title>
     </head>
-    <body onload="redirect">
+    <body onload="redirect()">
         <script>
             const urlParams = new URLSearchParams(window.location.search);
             const locationParam = atob(urlParams.get('url'));
