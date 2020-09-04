@@ -10,9 +10,9 @@
     <div class="container my-3">
       <h1>Website Cards by techboyg5</h1>
       <p>These cards let you easily reference one web page on another. This is what one looks like:</p>
-      <iframe src="https://techboyg5-php.herokuapp.com/cards.php?favicon=aHR0cHM6Ly9wcm9qZWN0cy50ZWNoYm95ZzVibG9nLmNvbS9mYXZpY29uLmljbw==&href=aHR0cHM6Ly9wcm9qZWN0cy50ZWNoYm95ZzVibG9nLmNvbS8=&title=techboyg5%27s%20Projects&desc=No%20matter%20what%20you%27re%20up%20to,%20techboyg5%27s%20projects%20have%20a%20lot%20to%20offer." style="border:none;width:100%"></iframe>
+      <iframe class="g5cards" src="https://techboyg5-php.herokuapp.com/cards.php?favicon=aHR0cHM6Ly9wcm9qZWN0cy50ZWNoYm95ZzVibG9nLmNvbS9mYXZpY29uLmljbw==&href=aHR0cHM6Ly9wcm9qZWN0cy50ZWNoYm95ZzVibG9nLmNvbS8=&title=techboyg5%27s%20Projects&desc=No%20matter%20what%20you%27re%20up%20to,%20techboyg5%27s%20projects%20have%20a%20lot%20to%20offer." style="border:none;width:100%"></iframe>
       <p>To add the cards to your website, add the following code:</p>
-      <code>&lt;iframe src="https://techboyg5-php.herokuapp.com/cards.php?favicon=aHR0cHM6Ly9wcm9qZWN0cy50ZWNoYm95ZzVibG9nLmNvbS9mYXZpY29uLmljbw==&href=aHR0cHM6Ly9wcm9qZWN0cy50ZWNoYm95ZzVibG9nLmNvbS8=&title=techboyg5%27s%20Projects&desc=No%20matter%20what%20you%27re%20up%20to,%20techboyg5%27s%20projects%20have%20a%20lot%20to%20offer." style="border:none;width:100%"&gt;&lt;/iframe&gt;</code>
+      <code>&lt;iframe class="g5cards" src="https://techboyg5-php.herokuapp.com/cards.php?favicon=aHR0cHM6Ly9wcm9qZWN0cy50ZWNoYm95ZzVibG9nLmNvbS9mYXZpY29uLmljbw==&href=aHR0cHM6Ly9wcm9qZWN0cy50ZWNoYm95ZzVibG9nLmNvbS8=&title=techboyg5%27s%20Projects&desc=No%20matter%20what%20you%27re%20up%20to,%20techboyg5%27s%20projects%20have%20a%20lot%20to%20offer." style="border:none;width:100%"&gt;&lt;/iframe&gt;</code>
       <p>This generates the example above.</p>
       <h2>Customization</h2>
       <p>You can customize the card by changing the URL parameters. They are:</p>
@@ -29,5 +29,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      $( window ).on( "message", function() {
+        if (event.data[0] = 'resize' && event.origin = 'https://techboyg5-php.herokuapp.com') {
+          $( '.g5cards' ).height = event.data[1];
+        }
+      })
+    </script>
   </body>
 </html>
