@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Embed API Demo</title>
-</head>
-<body>
-
-<!-- Step 1: Create the containing elements. -->
-
-<section id="auth-button"></section>
-<section id="view-selector"></section>
-<section id="timeline"></section>
-
-<!-- Step 2: Load the library. -->
-
+  <head>
+    <meta charset="utf-8">
+    <title>Site Analytics</title>
+  </head>
+  <body>
+    <h1>Site Analytics</h1>
+    <section id="auth-button"></section>
+    <section id="view-selector"></section>
+    <section id="timeline"></section>
 <script>
 (function(w,d,s,g,js,fjs){
   g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(cb){this.q.push(cb)}};
@@ -71,5 +67,6 @@ gapi.analytics.ready(function() {
   });
 });
 </script>
-</body>
+
+  </body>
 </html>
