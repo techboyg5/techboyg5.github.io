@@ -1,15 +1,34 @@
 ---
 layout: default
-title: Real-time HTML Editor
+title: Real-time Code Editor
 ---
-<p>Paste the HTML code into the text box on the left side, and the right side will be updated instantly.</p>
+<p>Paste the code into the text boxes, and the preview will be updated instantly.</p>
 <form>
-    <label for="codeInput">Paste your HTML code here:</label>
-    <textarea id="codeInput" name="codeInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
+    <label for="htmlInput">HTML code:</label>
+    <textarea id="htmlInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
+    <label for="cssInput">CSS code:</label>
+    <textarea id="cssInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
+    <label for="jsInput">JavaScript code:</label>
+    <textarea id="jsInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
 </form>
 <iframe id="codeResult" height="300" src="about:blank" style="width:100%"></iframe>
 <script>
     function goHtml() {
-        document.getElementById("codeResult").srcdoc = document.getElementById("codeInput").value;
+        document.getElementById("codeResult").srcdoc = `
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <style>
+                        ` + document.getElementById("cssInput").value + `
+                    </style>
+                </head>
+                <body>
+                    ` + document.getElementById("htmlInput").value + `
+                    <script>
+                        ` + document.getElementById("jsInput").value + `
+                    <\/script>
+                </body>
+            </html>
+        `;
     }
 </script>
