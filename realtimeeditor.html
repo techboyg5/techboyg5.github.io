@@ -4,12 +4,20 @@ title: Real-time Code Editor
 ---
 <p>Paste the code into the text boxes, and the preview will be updated instantly.</p>
 <form>
-    <label for="htmlInput">HTML code:</label>
-    <textarea id="htmlInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
-    <label for="cssInput">CSS code:</label>
-    <textarea id="cssInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
-    <label for="jsInput">JavaScript code:</label>
-    <textarea id="jsInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
+    <div style="display:flex">
+        <div style="width:33%">
+            <label for="htmlInput">HTML code:</label>
+            <textarea id="htmlInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
+        </div>
+        <div style="width:33%">
+            <label for="cssInput">CSS code:</label>
+            <textarea id="cssInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
+        </div>
+        <div style="width:33%">
+            <label for="jsInput">JavaScript code:</label>
+            <textarea id="jsInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
+        </div>
+    </div>
 </form>
 <iframe id="codeResult" height="300" src="about:blank" style="width:100%"></iframe>
 <script>
