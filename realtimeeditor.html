@@ -7,19 +7,20 @@ title: Real-time Code Editor
     <div style="display:flex">
         <div style="width:33%">
             <label for="htmlInput">HTML code:</label>
-            <textarea id="htmlInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
+            <textarea id="htmlInput" cols="80" rows="25" style="width:100%"></textarea>
         </div>
         <div style="width:33%">
             <label for="cssInput">CSS code:</label>
-            <textarea id="cssInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
+            <textarea id="cssInput" cols="80" rows="25" style="width:100%"></textarea>
         </div>
         <div style="width:33%">
             <label for="jsInput">JavaScript code:</label>
-            <textarea id="jsInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
+            <textarea id="jsInput" cols="80" rows="25" style="width:100%"></textarea>
         </div>
     </div>
+    <button type="button" onclick="goHtml();">Click to Update Preview</button>
 </form>
-<iframe id="codeResult" height="300" src="about:blank" style="width:100%"></iframe>
+<iframe id="codeResult" height="300" src="about:blank" style="width:100%" sandbox="allow-scripts"></iframe>
 <script>
     function goHtml() {
         document.getElementById("codeResult").srcdoc = `
@@ -28,7 +29,6 @@ title: Real-time Code Editor
                 <head>
                     <meta charset="utf-8">
                     <title>Editor Content</title>
-                    <base target="_blank">
                     <style>
                         ` + document.getElementById("cssInput").value + `
                     </style>
