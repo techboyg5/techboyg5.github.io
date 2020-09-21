@@ -7,7 +7,7 @@ title: Real-time HTML Editor
     <label for="codeInput">Paste your HTML code here:</label>
     <textarea id="codeInput" name="codeInput" cols="80" rows="25" oninput="goHtml();" style="width:100%"></textarea>
 </form>
-<iframe id="codeResult" width="800" height="600" src="about:blank"></iframe>
+<iframe id="codeResult" height="300" src="about:blank" style="width:100%"></iframe>
 <script>
     function goHtml() {
         document.getElementById("codeResult").srcdoc = document.getElementById("codeInput").value;
