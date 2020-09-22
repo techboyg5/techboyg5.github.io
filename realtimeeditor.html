@@ -45,7 +45,6 @@ title: Code Editor
             </html>
         `;
             const blob = new Blob([template], {type: 'text/html'});
-            const blobURL = URL.createObjectURL(blob);
-            document.getElementById("codeResult").src = blobURL;
+            document.getElementById("codeResult").src = URL.createObjectURL(blob);
       }
     </script>
