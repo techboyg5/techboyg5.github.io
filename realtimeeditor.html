@@ -23,23 +23,27 @@ title: Code Editor
     <iframe id="codeResult" src="about:blank" style="width:100%" height="300"></iframe>
     <script>
       function goHtml() {
-        document.getElementById("codeResult").srcdoc = `
+            const html = document.getElementById("htmlInput").value;
+            const css = document.getElementById("htmlInput").value;
+            const js = document.getElementById("jsInput").value;
+         const template = `
           <!DOCTYPE html>
             <html>
               <head>
                 <meta charset="utf-8">
                 <title>Editor Content</title>
                 <style>
-                  ` + document.getElementById("cssInput").value + `
+                  ${css}
                 </style>
               </head>
               <body>
-                ` + document.getElementById("htmlInput").value + `
+                ${html}
                 <script>
-                  ` + document.getElementById("jsInput").value + `
+                  ${js}
                 <\/script>
               </body>
             </html>
         `;
+            document.getElementById("codeResult").srcdoc
       }
     </script>
