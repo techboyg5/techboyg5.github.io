@@ -15,20 +15,12 @@
 		<title>{{ page.title }}</title>
 		<link rel="canonical" href="https://projects.techboyg5blog.com{{ page.url }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="/web-development-tutorial/style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	</head>
 	<body>
-		<header class="tutorial-nav">
-			<span class="tutorial-brand" href="#"><a href="https://techboyg5blog.com/">techboyg5</a></span>
-		</header>
-		<div class="inner-container">
-			<main class="content-container content-container-full">
-					<h1>{{ page.title }}</h1>
-					<article id="content">
-						{{ content }}
-					</article>
-			</main>
+		<div class="container">
+			<h1>{{ page.title }}</h1>
+			{[ content }}
 		</div>
 		<footer class="footer">
 			<div class="shields">
